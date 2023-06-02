@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 2138f82144b67954a85bd6dbe054b40c
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_Cabe\xE7a_BaseColor"
+    second: {fileID: 2800000, guid: b350aca92a74dc842aa0f366bf14b9dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_M\xE3o_R_BaseColor"
+    second: {fileID: 2800000, guid: 196401ff65eec934da8ab4d921411cc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_Perna_L_BaseColor
+    second: {fileID: 2800000, guid: e75cff2917851354ea5c7c810ef72bf6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_Perna_L_Metallic
+    second: {fileID: 2800000, guid: 037ac71d84e314f4ea8e096e61be5950, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_antena_BaseColor
+    second: {fileID: 2800000, guid: 09f6dde0f365d4a4ca5d3ba7aed9ed80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_bra\xE7os_BaseColor"
+    second: {fileID: 2800000, guid: 7ebd03c8dc4f28b42a45df33e4316949, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_bra\xE7os_Metallic"
+    second: {fileID: 2800000, guid: fbc735e91eb77804fbeee4e92a73a7f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_dedo1_BaseColor
+    second: {fileID: 2800000, guid: 942093c9e29fdc3429b6fbecc9b6da52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_dedo1_Metallic
+    second: {fileID: 2800000, guid: 8d0f6386d36af6148903f1172581ab7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_dedo2_BaseColor
+    second: {fileID: 2800000, guid: 1d4f676b94fb46147b650fd31cb6711b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_dedo2_Metallic
+    second: {fileID: 2800000, guid: 7edbeb6fe2d71bc43a3f39ad80bc0df4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_engranagem_BaseColor
+    second: {fileID: 2800000, guid: 0d6620855d92a3f45970788572cedb1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_engranagem_Metallic
+    second: {fileID: 2800000, guid: e81c3de44031c6847a9a4f8781aa3b8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_juntas_BaseColor
+    second: {fileID: 2800000, guid: 973ae1089169b944fb5d74f10ded3d29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_juntas_Metallic
+    second: {fileID: 2800000, guid: 8b532252b06608b47bd2a26b361788d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_m\xE3o_L_BaseColor"
+    second: {fileID: 2800000, guid: bad8fb18905783e4bb28ad452fd3c9e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_m\xE3o_L_Metallic"
+    second: {fileID: 2800000, guid: 2484f22e74c8ec1469276d485479f381, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_perna_R_BaseColor
+    second: {fileID: 2800000, guid: d11201e924a6b89468f78606da78f398, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_perna_R_Metallic
+    second: {fileID: 2800000, guid: 1e5525a8e6ed1384e9b2a9b5c03bc57b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_punho_BaseColor
+    second: {fileID: 2800000, guid: d3cf839d51de0d3418225c3a3b8815b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_punho_Metallic
+    second: {fileID: 2800000, guid: 77ff82703554aa2408558497a62d42bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_p\xE9s_BaseColor"
+    second: {fileID: 2800000, guid: 2bee11cb974c2b3459dd99db98dd57e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "robo rigado save_p\xE9s_Metallic"
+    second: {fileID: 2800000, guid: a2921b2cdce3b9644b576ddc70f8aea6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_torax_BaseColor
+    second: {fileID: 2800000, guid: 73cad8caaaed58f4f9b99ec2a9791b92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: robo rigado save_torax_Metallic
+    second: {fileID: 2800000, guid: bdcad035f4e55fd4fb4ad902d18bfc46, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
