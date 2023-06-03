@@ -20,8 +20,8 @@ public class GameController : MonoBehaviour
     public Text txtHumanos;
     public Text txtPoluicao;
     public Text txtBonus;
-    public bool gas;
-    public bool gased;
+    public static bool gas;
+    public static bool gased;
     public Text txtFazenda;
     // Start is called before the first frame update
     void Start()
@@ -41,10 +41,11 @@ public class GameController : MonoBehaviour
         txtFazenda.text = "Fazenda: " + houseLife;  
 		if (GameObject.FindGameObjectWithTag("playerDamage") != null) 
         {
-            txtBonus.text = "Bonus: " + GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().bonus.ToString();
+            txtBonus.text = "Bonus: " + (GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().bonus + GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().humanBonus).ToString()  ;
             if (gas && !gased)
             {
-                GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().bonus += 2;
+                GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().bonus += 3;
+                gased = true;
             }
         }
 		
@@ -61,7 +62,6 @@ public class GameController : MonoBehaviour
     {
 		if (acoes <= 0 && !wave) 
         {
-            print("AA");
             for (int i = 0; i < enimyNumbers; i++)
             {
             foreach (GameObject a in spawns)
@@ -80,7 +80,7 @@ public class GameController : MonoBehaviour
                     GameObject.FindGameObjectWithTag("playerDamage").GetComponent<HitValue>().bonus -= 2;
                 }
                 gased = false;
-                acoes += 2;
+                acoes += 3;
                 enimyNumbers++;
                 wave = false;
                 gas = false;
@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
                 {
                     p.Grow();
                 }
-               
+                houseLife += humanos / 2;
             }
         }
         
@@ -96,6 +96,11 @@ public class GameController : MonoBehaviour
     public static void AddGameValues(float humanosc, float poluicaoc) 
     {
         humanos += humanosc;
+		if (humanos % 2 == 0) 
+        {
+            houseMaxLife += 1;
+            houseLife += 1;
+        }
         poluicao += poluicaoc;
     }
     IEnumerator Spwan(Transform local) 
@@ -103,4 +108,5 @@ public class GameController : MonoBehaviour
         Instantiate(enimy, local.position, local.rotation);
         yield return new WaitForSeconds(2f); 
     }
+    
 }

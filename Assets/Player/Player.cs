@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public GameObject arvore;
     public Transform arvorePoint;
     public HitValue hit;
-    public float bonus;
+
     void Start()
     {
         
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
             health = maxHealth;
         }
         PlantTree();
-        hit.bonus = bonus;
+
     }
     public void minusLife(float life) 
     {
@@ -42,27 +42,11 @@ public class Player : MonoBehaviour
     }
 	private void OnTriggerStay(Collider other)
 	{
-        if (Input.GetButtonDown("Interect") && 
-            other.gameObject.tag == "PlantSide" && 
-            !other.gameObject.GetComponent<PlantSide>().planted && 
-            GameController.acoes > 0)
-        {
-            other.gameObject.GetComponent<PlantSide>().Plant();
-            GameController.acoes--;
-           
-        }
+        PlayerPlant(other);
     }
 	private void OnTriggerEnter(Collider other)
 	{
-        if (Input.GetButtonDown("Interect") && 
-            other.gameObject.tag == "PlantSide" && 
-            !other.gameObject.GetComponent<PlantSide>().planted && 
-            GameController.acoes > 0)
-        {
-            other.gameObject.GetComponent<PlantSide>().Plant();
-            GameController.acoes--;
-
-        }
+        PlayerPlant(other);
     }
     public void PlantTree() 
     {
@@ -70,6 +54,34 @@ public class Player : MonoBehaviour
         {
             Instantiate(arvore, arvorePoint.position, arvorePoint.rotation);
             GameController.acoes--;
+			
+          
         }
     }
+    void PlayerPlant(Collider colider) 
+    {
+        if (Input.GetButtonDown("Interect") &&
+            colider.gameObject.tag == "PlantSide" &&
+            !colider.gameObject.GetComponent<PlantSide>().planted &&
+            GameController.acoes > 0)
+        {
+            colider.gameObject.GetComponent<PlantSide>().Plant();
+            GameController.acoes--;
+            if (GameController.humanos % 2 == 0)
+            {
+                gameObject.GetComponent<PlayerMovement>().speed += 1;
+                hit.humanBonus++;
+            }
+        }
+		if (Input.GetButtonDown("Interect") &&
+            colider.gameObject.tag == "Gas" &&
+            !GameController.gas) 
+        {
+            GameController.gas = true;
+            GameController.acoes--;
+            GameController.poluicao += 2;
+        }
+        
+    }
+
 }

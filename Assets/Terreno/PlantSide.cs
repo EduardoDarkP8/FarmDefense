@@ -28,6 +28,7 @@ public class PlantSide : MonoBehaviour
             planted = true;
             plantsNum++;
             GameController.AddGameValues(1, 1);
+
         }
     }
     public void Grow()

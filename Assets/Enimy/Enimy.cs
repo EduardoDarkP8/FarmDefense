@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enimy : MonoBehaviour
 {
-    public float life = 2;
+    public float life = 3;
     Rigidbody rg;
     public Transform house;
     public static float velocity = 4;
@@ -17,6 +17,10 @@ public class Enimy : MonoBehaviour
         house = GameObject.FindGameObjectWithTag("Casa").transform;
         enimyNav.speed = velocity;
         GameController.enimies.Add(gameObject);
+        velocity += GameController.poluicao / 3;
+        velocity += GameController.enimyNumbers / 3;
+        life += GameController.poluicao / 3;
+        life += GameController.enimyNumbers;
     }
 
     // Update is called once per frame

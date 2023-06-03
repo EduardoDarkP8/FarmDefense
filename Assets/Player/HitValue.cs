@@ -8,11 +8,12 @@ public class HitValue : MonoBehaviour
 {
 	public float baseDamage = 1;
 	public float bonus;
+	public float humanBonus;
 	public float damage;
 
 	private void Update()
 	{
-		damage = baseDamage + bonus;
+		damage = baseDamage + humanBonus + bonus;
 	}
 
 }
