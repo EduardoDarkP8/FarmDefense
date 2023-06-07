@@ -7,9 +7,9 @@ public class GameController : MonoBehaviour
 {
     public static int acoes;
     public static bool attack;
-    public static List<GameObject> enimies = new List<GameObject>();
-    public static List<GameObject> spawns = new List<GameObject>();
-    public static List<PlantSide> plants = new List<PlantSide>();
+    public static List<GameObject> enimies;
+    public static List<GameObject> spawns; 
+    public static List<PlantSide> plants; 
     public static int enimyNumbers = 1;
     public static float humanos;
     public static float poluicao;
@@ -23,9 +23,18 @@ public class GameController : MonoBehaviour
     public static bool gas;
     public static bool gased;
     public Text txtFazenda;
+    public GameObject reset;
     // Start is called before the first frame update
     void Start()
     {
+        enimies = new List<GameObject>();
+        spawns = new List<GameObject>();
+        plants = new List<PlantSide>();
+        houseMaxLife = 3;
+        houseLife = 3;
+        enimyNumbers = 1;
+        humanos = 0;
+        poluicao = 0;
         acoes = 3;
         spawns.AddRange(GameObject.FindGameObjectsWithTag("Spawns"));
         plants.AddRange(GameObject.FindObjectsOfType<PlantSide>());
@@ -56,6 +65,14 @@ public class GameController : MonoBehaviour
 		if (houseLife > houseMaxLife) 
         {
             houseLife = houseMaxLife;
+        }
+		if (houseLife <= 0) 
+        {
+            wave = false;
+            Time.timeScale = 0;
+            reset.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
     public void StartWave() 

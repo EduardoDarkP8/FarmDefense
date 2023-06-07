@@ -3,7 +3,37 @@ guid: 20b4e7cb65094384c986bc127dfd984d
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_Perna_L_BaseColor
+    second: {fileID: 2800000, guid: 0b74b071fee27684eb6897b5b27fb2d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_Perna_L_Metallic
+    second: {fileID: 2800000, guid: b77e1841f95eefd49b12be2b544d68be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_bracos_BaseColor
+    second: {fileID: 2800000, guid: d34716d0ae0a7b24a894e57081f2e0c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_bracos_Metallic
+    second: {fileID: 2800000, guid: 255260c6cd1591b499ebdc0597eb214a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_perna_R_BaseColor
+    second: {fileID: 2800000, guid: da30d4710a1f6634bbbf2f69effc9a96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roboInimigo_perna_R_Metallic
+    second: {fileID: 2800000, guid: e50c6d9f846a4ee49b1c7c6b8951c582, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

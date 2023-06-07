@@ -8,7 +8,7 @@ public class Enimy : MonoBehaviour
     public float life = 3;
     Rigidbody rg;
     public Transform house;
-    public static float velocity = 4;
+    public float velocity = 4;
     NavMeshAgent enimyNav;
     void Start()
     {
@@ -17,9 +17,14 @@ public class Enimy : MonoBehaviour
         house = GameObject.FindGameObjectWithTag("Casa").transform;
         enimyNav.speed = velocity;
         GameController.enimies.Add(gameObject);
-        velocity += GameController.poluicao / 3;
+		if (GameController.poluicao > 0)
+        {
+            velocity += GameController.poluicao / 3;
+            life += GameController.poluicao / 2;
+        }
+        
         velocity += GameController.enimyNumbers / 3;
-        life += GameController.poluicao / 3;
+        
         life += GameController.enimyNumbers;
     }
 

@@ -7,7 +7,7 @@ public class Arvore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameController.AddGameValues(0, -1);
+        GameController.poluicao--;
     }
 
     // Update is called once per frame

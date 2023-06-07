@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -51,12 +52,18 @@ public class PlayerMovement : MonoBehaviour
         if (x == 0 && z == 0)
         {
             rg.velocity = new Vector3(0, rg.velocity.y, 0);
+            anima.SetBool("Move", false);
+        }
+		else 
+        {
+            anima.SetBool("Move", true);
         }
     }
     void Jump() 
     {
 		if (jump) 
         {
+            anima.SetTrigger("Jump");
             rg.AddForce(transform.up * jumpForce,ForceMode.Impulse);
             jump = false;
             isGrounded = false;

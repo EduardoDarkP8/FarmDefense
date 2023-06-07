@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class Player : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class Player : MonoBehaviour
     public Transform arvorePoint;
     public HitValue hit;
     public Animator anima;
+    float cooldown = 3.1f, time = 0;
+
 
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -24,7 +27,12 @@ public class Player : MonoBehaviour
             health = maxHealth;
         }
         PlantTree();
-
+		if (Input.GetButtonDown("Interect") && time > cooldown) 
+        {
+            anima.SetTrigger("Interact");
+            time = 0;
+        }
+        time += Time.deltaTime;
     }
     public void minusLife(float life) 
     {
@@ -61,8 +69,7 @@ public class Player : MonoBehaviour
     }
     void PlayerPlant(Collider colider) 
     {
-        if (Input.GetButtonDown("Interect") &&
-            colider.gameObject.tag == "PlantSide" &&
+        if (colider.gameObject.tag == "PlantSide" &&
             !colider.gameObject.GetComponent<PlantSide>().planted &&
             GameController.acoes > 0)
         {
@@ -74,8 +81,7 @@ public class Player : MonoBehaviour
                 hit.humanBonus++;
             }
         }
-		if (Input.GetButtonDown("Interect") &&
-            colider.gameObject.tag == "Gas" &&
+		if (colider.gameObject.tag == "Gas" &&
             !GameController.gas) 
         {
             GameController.gas = true;
