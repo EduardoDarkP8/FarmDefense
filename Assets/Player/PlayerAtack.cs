@@ -7,12 +7,12 @@ public class PlayerAtack : MonoBehaviour
 {
         public float time;
         public float coolDown = 1.10f;
-        Animator anima;
+        public Animator anima;
 
         // Start is called before the first frame update
         void Start()
         {
-            anima = GetComponent<Animator>();
+
         }
 
         // Update is called once per frame

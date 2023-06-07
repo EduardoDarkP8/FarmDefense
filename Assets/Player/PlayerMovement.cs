@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float sensibility = 10;
     public Transform camera;
+    public Animator anima;
 
     // Start is called before the first frame update
     void Start()

@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public GameObject arvore;
     public Transform arvorePoint;
     public HitValue hit;
+    public Animator anima;
 
     void Start()
     {
